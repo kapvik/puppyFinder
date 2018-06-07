@@ -1,0 +1,22 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+	- var productName = 'Домик на холме, большая коробка с деталями и кубиками'
+	- var productDescription = 'Из этой прекрасной двухэтажной виллы (LEGO № 5771) из серии LEGO Creator. К тому же из виллы можно собрать две другие отличные модели. На площадке для гриля житель этого дома может отлично отдохнуть вместе со своим псом. Дверной звонок на вилле работает и сопровождается собачьим лаем. К тому же из виллы можно собрать еще два других дома.'
+
+block content
+		section.main-nav
+			.container
+				ul.main-nav__list
+					li.main-nav__item
+						a(href="javascript:void(0);") Panama.ua
+					li.main-nav__item
+						a(href="javascript:void(0);") Игрушки
+					li.main-nav__item
+						a(href="javascript:void(0);") Детские конструкторы
+					li.main-nav__item
+						a(href="javascript:void(0);") LEGO
+		include ../modules/content
+		include index/slider

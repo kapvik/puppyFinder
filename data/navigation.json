@@ -1,0 +1,21 @@
+{
+  "headerNav": {
+  	  	"mainNav": {
+  	  		"О магазине" : "javascript:void(0)",
+    		"Baby клуб" : "javascript:void(0)",
+    		"Доставка и оплата" : "javascript:void(0)",
+    		"Новости" : "javascript:void(0)",
+    		"Контакты" : "javascript:void(0)"
+		},
+		"subNav": {
+    	"Игры и Игрушки": "javascript:void(0)",
+    	"Школа и Творчество" : "javascript:void(0)",
+    	"Одежда" : "javascript:void(0)",
+    	"Обувь" : "javascript:void(0)",
+    	"Кухня и Кормление" : "javascript:void(0)",
+    	"Гигиена и Уход" : "javascript:void(0)",
+    	"Спорт и Отдых" : "javascript:void(0)",
+    	"Детская и Коляска" : "javascript:void(0)"
+    }
+    }
+}

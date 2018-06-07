@@ -1,0 +1,47 @@
+header
+	.header-top
+		.container
+			.row
+				ul.header-nav__list.col-xl-6
+					each link, title in nav.headerNav.mainNav
+						li.header-nav__item
+							a(href=link)= title
+				ul.header-custom__list.col-xl-6
+					li.header-custom__item
+						+icon('user')
+						a(href="javascript:void(0);").header__entery Вход
+					li.header-custom__item
+						+icon('heart')
+						a(href="javascript:void(0);").header__favorite Избранное
+					li.header-custom__item.g-btn.g-btn__small
+						+icon('cart')
+						a(href="javascript:void(0);").header__cart Корзина 
+						span.g-btn__num (2)
+	.header-midle
+		.container
+			.row
+				.header-contacts.col-xl-4
+					.header-contact__top
+						a(href='tel: (044)593 82 39').header__phone (044) 593 82 39
+						a(href='tel: 0 800 50 77 12').header__phone 0 800 50 77 12
+					.header-contact__bottom
+						button(type='button').g-btn.btn__green.show-popup Обратный звонок
+					.contact-form__popup
+						form(action='#')
+							span.contact-form__popup-close x
+							input(type='text' placeholder='Ваше имя').contact-form__name
+							input(type='email' placeholder='Ваш email').contact-form__name
+							textarea(rows='5' columns='50' placeholder='Текст сообщения').contact-form__name
+							input(type='submit' value='Отправить').g-btn.btn__green
+				.header-logo.col-xl-4
+						+icon-png('logo')
+				span.header__menu: +icon('menu')
+				.header__search.col-xl-4
+					input(type='search' placeholder='Поиск')
+					span.header-search__icon: +icon('loupe')
+	.header-bottom
+		.container
+			ul.header-subnav__list
+				each link, title in nav.headerNav.subNav
+					li.header-subnav__item
+						a(href=link)= title
