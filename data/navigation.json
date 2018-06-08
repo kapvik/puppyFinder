@@ -1,11 +1,12 @@
 {
   "headerNav": {
   	  	"mainNav": {
-  	  		"О магазине" : "javascript:void(0)",
-    		"Baby клуб" : "javascript:void(0)",
-    		"Доставка и оплата" : "javascript:void(0)",
-    		"Новости" : "javascript:void(0)",
-    		"Контакты" : "javascript:void(0)"
+  	  		"Puppies" : "javascript:void(0)",
+    		"Adopt Rescue" : "javascript:void(0)",
+    		"BREEDERS" : "javascript:void(0)",
+    		"BREEDS" : "javascript:void(0)",
+    		"RESOURCES" : "javascript:void(0)",
+            "ADVERTISE" : "javascript:void(0)"
 		},
 		"subNav": {
     	"Игры и Игрушки": "javascript:void(0)",
@@ -16,6 +17,6 @@
     	"Гигиена и Уход" : "javascript:void(0)",
     	"Спорт и Отдых" : "javascript:void(0)",
     	"Детская и Коляска" : "javascript:void(0)"
-    }
+        }
     }
 }

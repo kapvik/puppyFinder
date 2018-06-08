@@ -1,0 +1,36 @@
+nav {
+	background-color: $primary;
+}
+
+.icon-dog-icon {
+	fill: $white;
+	transform: rotateY(180deg);
+	@include size(36px,39px);
+}
+
+.icon-faq-white {
+	fill: $white;
+	@include size(22px);
+}
+
+.header-nav__link {
+	color: $white;
+	font-family: open_sanssemibold;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.right-nav {
+	font-family: open_sansbold;
+	font-size: 16px;
+
+	.btn-signup {
+		color: $primary;
+		background-color: $white;
+	}
+
+	.btn-login {
+		color: $white;
+		background-color: $primary;
+	}
+}

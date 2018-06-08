@@ -1,0 +1,52 @@
+header {
+	color: $white;
+	margin-bottom: 72px;
+}
+
+.header-img {
+	background-image: url(../images/general/homepage_filter.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header-search {
+	text-align: center;
+	font-family: open_sansbold;
+	padding-top: 43px;
+	padding-bottom: 29px;
+
+	.header-search__title {
+		font-size: 36px;
+	}
+
+	.header-search__text {
+		font-size: 24px;
+	}
+}
+
+.header-search__form
+
+		input::placeholder {
+			color: #9b9b9b;
+			font-size: 16px;
+			font-family: open_sansregular;
+		}
+
+		label {
+			position: relative;
+			width: 444px;
+			hight: 50px;
+
+			input.form-control {
+				padding-left: 60px;
+			}
+		}
+
+		.icon-search {
+			@include size(18px);
+			fill: #9b9b9b;
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			transform: translateY(-50%);
+		}

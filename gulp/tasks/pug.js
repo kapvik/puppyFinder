@@ -4,7 +4,11 @@ let plumber = require('gulp-plumber'),
     changed = require('gulp-changed'),
     cached = require('gulp-cached'),
     gulpif = require('gulp-if'),
-    filter = require('gulp-filter');
+    filter = require('gulp-filter'),
+    data = require('gulp-data'),
+    fs = require('fs'),
+    path = require('path'),
+    content = require('../../data/navigation.json');
 
 module.exports = function () {
     $.gulp.task('pug', () => {
@@ -17,6 +21,7 @@ module.exports = function () {
             }))
             .pipe(plumber())
             .pipe(pug({
+                locals : content,
                 pretty: true
             }))
             .pipe($.gulp.dest('./build/'))
