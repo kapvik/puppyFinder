@@ -1,0 +1,26 @@
+.card-for-adoption {
+	margin-bottom: 47px;
+
+	.dogs-card-header {
+		border-top: 2px solid $darkPink;
+		
+		.list-inline {
+			color:$darkPink;
+		}
+
+		.list-inline-item:first-child {
+			background-color: $darkPink;
+		}
+	}
+
+	.dog-card-title, .card-price {
+		color: $darkPink;
+	}
+}
+
+.card-icon {
+	.icon-heart {
+		fill: $darkPink;
+		@include size(29px,26px);
+	}
+}

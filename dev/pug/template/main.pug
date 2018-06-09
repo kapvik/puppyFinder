@@ -18,10 +18,12 @@ html(lang="ru-RU")
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
 		<![endif]-->
 	body(class=pageClass)
-		.wrapper
-			include ../modules/header/header
-			main
-			include ../modules/footer/footer
+		include ../modules/header/header
+		main
+			include ../pages/card-for-sale
+			include ../pages/card-for-adoption
+			include ../pages/community
+		include ../modules/footer/footer
 		script(src="static/js/jquery.js")
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")

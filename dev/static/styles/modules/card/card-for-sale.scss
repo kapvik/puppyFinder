@@ -1,0 +1,48 @@
+.card-for-sale {
+	margin-bottom: 91px;
+
+	.dogs-card-header {
+		border-top: 2px solid $primary;
+		
+		.list-inline {
+			color: $primary;
+		}
+
+		.list-inline-item:first-child {
+			background-color: $primary;
+		}
+	}
+
+	.dog-card-title, .card-price {
+		color: $accept;
+	}
+}
+
+.dogs-card-header {
+		
+	.list-inline {
+		font-size: 18px;
+		font-family: open_sanssemibold;
+	}
+
+	.list-inline-item:first-child {
+		color: $white;
+		padding: 7px 20px;
+		font-size: 17px;
+	}
+
+	.list-inline-item:last-child {
+		color: $greyText;
+	}
+}
+
+.card-img-overlay {
+	padding: 0;
+	.img-label {
+		background-color: $white;
+		padding: 7px 10px;
+		font-size: 16px;
+		color: $grey;
+		font-family: open_sanssemibold;
+	}
+}
