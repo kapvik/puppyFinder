@@ -24,29 +24,29 @@ header {
 	}
 }
 
-.header-search__form
+.header-search__form {
+	position: relative;
+	width: 444px;
+	max-width: 100%;
+			
+	input.form-control {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
 
-		input::placeholder {
-			color: #9b9b9b;
-			font-size: 16px;
-			font-family: open_sansregular;
-		}
+	.icon-search {
+		@include size(18px);
+		fill: #9b9b9b;
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		transform: translateY(-50%);
+		z-index: 9999;
+	}
+}
 
-		label {
-			position: relative;
-			width: 444px;
-			max-width: 100%;
-
-			input.form-control {
-				padding-left: 60px;
-			}
-		}
-
-		.icon-search {
-			@include size(18px);
-			fill: #9b9b9b;
-			position: absolute;
-			top: 50%;
-			left: 20px;
-			transform: translateY(-50%);
-		}
+input.form-control::placeholder {
+		color: #9b9b9b;
+		font-size: 16px;
+		font-family: open_sansregular;
+	}

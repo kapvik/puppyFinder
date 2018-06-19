@@ -1,0 +1,21 @@
+.card-breeds {
+	.dogs-card-header {
+		border-top: 2px solid $purple;
+		
+		.list-inline {
+			color:$purple;
+		}
+
+		.list-inline-item:first-child {
+			background-color: $purple;
+		}
+	}
+
+	.dog-card-title, .card-price {
+		color: $purple;
+	}
+
+	.card {
+		border-color: $purple;
+	}
+}

@@ -1,0 +1,387 @@
+.filter-top {
+	margin-top: 32px;
+}
+
+// Style cross in an input field
+.header-search__form .icon-cross {
+	@include size(13px,14px);
+	fill: #dbdbdb;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 4;
+}
+
+// Style the triangle menu icon 
+.filter-top__item {
+	position: relative;
+	.icon-d-menu {
+		@include size(30px, 20px);
+		fill: #36ca51;
+	}
+}
+
+// Style the location field
+.filter-top__item-center {
+	width: 100%;
+	@media only screen and (min-width: 768px) {
+		min-width: 318px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		max-width: 318px;
+	}
+
+	.input-group-prepend {
+		button {
+			width: 100%;
+			padding-right: 45px;
+
+			@media only screen and (min-width: 768px) {
+				max-width: 108px;
+			}
+		}
+
+		.dropdown-menu {
+			padding-top: 22px;
+		}
+	}
+	input {
+		width: 100%;
+
+		@media only screen and (min-width: 768px) {
+			max-width: 210px;
+		}
+
+		@include placeholder {
+			color: #bab9b9;
+			font-size: 16px;
+			font-family: 'Open Sans', sans-serif;	
+		}
+	}
+	a.dropdown-item {
+		font-family: 'Open Sans', sans-serif;
+		color: #636363;
+		font-size: 15px;
+		&:hover {
+			color: #36ca51;
+			background-color: #f7f7f7;
+		}
+	}
+}
+
+
+.bottom__item-keyword {
+	min-width: 218px;
+	width: 100%;
+	input {
+		@include placeholder {
+			color: #bab9b9;
+			font-size: 16px;
+			font-family: 'Open Sans', sans-serif;	
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		max-width: 218px;
+	}
+}
+
+.bottom__item-gender {
+	width: 100%;
+}
+
+.bottom__item-price, .bottom__item-age{
+	width: 178px;
+	width: 100%;
+}
+
+
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.show > .btn-outline-success.dropdown-toggle,
+.btn-outline-success:hover {
+	background-color: #f7f7f7;
+	color: #36ca51;
+}
+
+// Rotate the arrow to down in dropdowns buttons onclick
+.show > .btn-outline-success.dropdown-toggle {
+	.icon-arrow {
+		transform: rotateZ(270deg);
+	}
+}
+
+.dropdown-menu {
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown > .btn {
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+}
+
+// Hide default dropdown arrow
+.dropdown-toggle::after {
+	display: none;
+}
+
+// Style custom arrow in dropdowns
+.dropdown-toggle {
+	position: relative;
+	.icon-arrow {
+		fill: $accept;
+		@include size(15px);
+		transform: rotateZ(90deg);
+		position: absolute;
+		right: 14px;
+		top: 30%;
+	}
+}
+
+// Style submit button
+.filter-bottom {
+	button[type="submit"] {
+		width: 100%;
+		background-color: $primary;
+		font-weight: 700;
+		border: none;
+		@media only screen and (min-width: 768px) {
+			max-width: 78px;
+		}
+	}
+}
+
+/***********************************
+*******Custom range*****************
+***********************************/
+// Style for range table
+.filter-price {
+	display: inline-block;
+	margin-bottom: 20px;
+	input {
+		color: $greyText;
+		border: none;
+		font-family: 'Open Sans', sans-serif;
+	}
+}
+
+// Style all lenght of range
+.ui-slider-horizontal {
+	height: 1px;
+	background: #dbdbdb;
+	border: 2px solid #dbdbdb;
+}
+
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+
+// Style for selected range length
+.ui-slider-horizontal .ui-slider-range {
+	height: 1px;
+	max-width: 240px;
+	width: 100%;
+}
+
+// Style for selected range length
+.ui-slider .ui-slider-range {
+	border: 2px solid $primary;
+	position: absolute;
+	top: -1px;
+	z-index: 1;
+	height: 1px;
+	display: block;
+}
+
+// Style for range handlers
+.ui-slider .ui-slider-handle {
+	border-radius: 50%;
+	background: $primary;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+    z-index: 2;
+    top: -10px;
+}
+
+#slider-range {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// Remove outline on focus
+.ui-state-focus {
+	outline-style: none;
+} 
+
+.dropdown-price {
+	width: 372px;
+	input {
+		width: 240px;
+		margin-right: 40px;
+		margin-left: 10px;
+		text-align: center;
+	}
+}
+
+.dropdown-menu.show{
+	z-index: 9999;
+}
+
+.dropdown-gender {
+	width: 220px;
+}
+
+.dropdown-age {
+	width: 178px;
+	padding: 16px  17px 20px 0;
+}
+
+/**************************************
+*********** Custom checkbox************
+***************************************
+** Customize the label ***************/
+.custom-check__label {
+	position: relative;
+	cursor: pointer;
+	color: $greyText;
+	user-select: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+// Hide the default checkbox
+.custom-check__label input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+// Create a custom checkbox
+.custom-check__checkmark {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	border: 1px solid #dbdbdb;
+	border-radius: 2px;
+}
+
+// When the checkbox is checked, add a blue background
+ .custom-check__label input:checked ~ .custom-check__checkmark {
+ 	border: 1px solid $accept;
+ 	.icon-check {
+ 		display: block;
+ 	}
+ }
+
+// Style the checkmark
+.icon-check {
+	fill: $accept;
+	transform: rotateZ(90deg);
+	display: none;
+	position: absolute;
+}
+
+// Style the checkmark for the gender dropdown
+.dropdown-gender {
+	padding: 30px 14px;
+
+	.custom-check__label {
+		padding-left: 35px;
+		padding-top: 3px;
+
+	}
+
+	.custom-check__checkmark {
+		height: 28px;
+		width: 28px;
+	}
+
+	.icon-check {
+		@include size(16px);
+		top: 5px;
+		left: 5px;
+	}
+}
+
+// Style the checkmark for the age dropdown
+.dropdown-age {
+	padding-right: 17px;
+
+	.custom-check__label {
+		padding-left: 28px;
+	}
+
+	.icon-check {
+		@include size(8px);
+		top: 1px;
+		right: 2px;
+	}
+
+	.custom-check__checkmark {
+		padding: 0 4px;
+		margin-right: 14px;
+		margin-top: 2px;
+		height: 14px;
+		width: 14px;
+	}
+}
+
+// Remove bootstrap's box-shadow from button and inputs
+.filter, .filter-header {
+	.btn:focus, .btn.focus, .btn:active, .form-control:focus {
+		box-shadow: none;
+	}
+
+	.form-control:focus {
+		border-color: $accept;
+	}
+}
+
+
+@media only screen and (max-width: 425px) {
+
+	.dropdown-menu {
+		box-shadow: none;
+	}
+
+	.bottom__item-keyword, .filter-bottom button[type="submit"] {
+		max-width: unset;
+	}
+
+	.bottom__item-gender, .bottom__item-price, .bottom__item-age {
+		border: none;
+		&:hover {
+			background-color: #fff;
+		}
+
+		.icon-arrow {
+			display: none;
+		}
+	}
+
+	.dropdown-gender, .dropdown-price, .dropdown-age {
+		display: block;
+		position: relative;
+		border: none;
+		top: auto;
+		padding: 0;
+		width: 100%;
+		
+		label, input {
+			color: #636363;
+			&#amount {
+				text-align: left;
+			}
+		}
+		
+		button {
+			display: none;
+		}
+
+		.form-check {
+			padding-left: 0.75rem;
+		}
+	}
+}

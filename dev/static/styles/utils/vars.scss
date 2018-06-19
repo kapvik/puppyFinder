@@ -9,6 +9,7 @@ $lightPink: #ef7ca8;
 $darkBlue: #2791aa;
 $lightBlue: #50a7bc;
 
+$purple: #a280d3;
 $darkPurple: #8d69c0;
 
 $darkGrey: #363636;
@@ -29,4 +30,7 @@ $mainMenuMouseoverColor: #289015;
 
 // Fonts
 
-//
+// Margins
+section.container {
+	margin-bottom: 90px;
+}

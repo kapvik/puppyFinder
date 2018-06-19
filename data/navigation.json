@@ -2,7 +2,8 @@
   "headerNav": {
   	  	"mainNav": {
   	  		"Puppies" : "javascript:void(0)",
-    		"Adopt Rescue" : "javascript:void(0)",
+    		"Adopt": "javascript:void(0)",
+        "Rescue" : "javascript:void(0)",
     		"BREEDERS" : "javascript:void(0)",
     		"BREEDS" : "javascript:void(0)",
     		"RESOURCES" : "javascript:void(0)",

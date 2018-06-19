@@ -1,0 +1,9 @@
+.com-text {
+	color: $grey;
+	font-size: 26px;
+	font-family: open_sanssemibold;
+}
+
+.com-text + .list-inline {
+	margin-top: 60px;
+}

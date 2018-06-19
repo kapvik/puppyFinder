@@ -1,0 +1,86 @@
+section.filter
+	.filter-top.form-group.form-row
+		.header-search__form.input-group.mb-3.col-md-5
+			+icon('search')
+			input(type="search" placeholder="Start Typing Breed Name" aria-describedby="basic-addon1").form-control
+			+icon('cross')
+		.filter-top__item-center.input-group.mb-3.col-md-4.col-11
+			.input-group-prepend
+				button(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").btn.btn-outline-success.dropdown-toggle#dropdownMenuButton Canada
+					+icon('arrow')
+				div(aria-labelledby="dropdownMenuButton").dropdown-menu
+					a.dropdown-item USA
+					a.dropdown-item Canada
+					a.dropdown-item United Kingdom
+					a.dropdown-item Australia
+					div(role="separator").dropdown-divider
+					a.dropdown-item Worldwide
+					div(role="separator").dropdown-divider
+					a.dropdown-item Afghanistan
+					a.dropdown-item Albania
+					a.dropdown-item Algeria
+					a.dropdown-item Andorra
+					a.dropdown-item Angola
+					a.dropdown-item Antigua and Barbuda
+					a.dropdown-item Argentina
+					a.dropdown-item Armenia
+					a.dropdown-item Aruba
+					a.dropdown-item Australia
+					a.dropdown-item Austria
+					a.dropdown-item Azerbaijan
+			input(type="text").form-control
+		.filter-top__item.btn.mb-3.col-1.text-left
+			+icon('d-menu')
+	.filter-bottom.form-group.form-row
+		.bottom__item-keyword.input-group.mb-3.col-md-3.col-sm-6
+			input(type="text" placeholder="Keywords typing").form-control
+		.dropdown.input-group.mb-3.col-md-2.col-sm-6
+			button(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").btn.btn-outline-success.dropdown-toggle.bottom__item-gender#dropdownMenuButton GENDER
+				+icon('arrow')
+			div(aria-labelledby="dropdownMenuButton").dropdown-menu.dropdown-gender
+				.form-check.form-check-inline
+					label.form-check-label.custom-check__label Male
+						input(type="checkbox" value="Female").custom-check__input
+						span.custom-check__checkmark
+							+icon('check')
+				.form-check.form-check-inline
+					label.form-check-label.custom-check__label Female
+						input(type="checkbox" value="Female").custom-check__input
+						span.custom-check__checkmark
+							+icon('check')
+							
+		.dropdown.input-group.mb-3.col-md-2.col-sm-6
+			button(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").btn.btn-outline-success.dropdown-toggle.bottom__item-price#dropdownMenuButton PRICE
+				+icon('arrow')
+			div(aria-labelledby="dropdownMenuButton").dropdown-menu.dropdown-price
+				.filter-price#price-range
+					p
+						input(type="text" readonly)#amount
+					#slider-range
+				button.btn.filter-price-btn Apply
+		.dropdown.input-group.mb-3.col-md-2.col-sm-6
+			button(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").btn.btn-outline-success.dropdown-toggle.bottom__item-age#dropdownMenuButton AGE
+				+icon('arrow')
+			div(aria-labelledby="dropdownMenuButton").dropdown-menu.dropdown-age
+				.form-check
+					label.form-check-label.custom-check__label Any age
+						input(type="checkbox" value="Female").custom-check__input
+						span.custom-check__checkmark
+							+icon('check')
+				.form-check
+					label.form-check-label.custom-check__label Up to 4 month
+						input(type="checkbox" value="Female").custom-check__input
+						span.custom-check__checkmark
+							+icon('check')
+				.form-check
+					label.form-check-label.custom-check__label Up to 6 month
+						input(type="checkbox" value="Female").custom-check__input
+						span.custom-check__checkmark
+							+icon('check')
+				.form-check
+					label.form-check-label.custom-check__label Up to 1 year
+						input(type="checkbox" value="Female").custom-check__input
+						span.custom-check__checkmark
+							+icon('check')
+		.mb-3.col-12.col-md-2
+			button(type="submit").btn.btn-success GO

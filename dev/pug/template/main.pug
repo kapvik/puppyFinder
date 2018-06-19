@@ -18,13 +18,18 @@ html(lang="ru-RU")
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
 		<![endif]-->
 	body(class=pageClass)
-		include ../modules/header/header
-		main
-			include ../pages/card-for-sale
-			include ../pages/card-for-adoption
-			include ../pages/community
-		include ../modules/footer/footer
+		.container
+			include ../modules/header/filter-header
+			include ../pages/filter
+		//- main
+			//- include ../pages/card-for-sale
+			//- include ../pages/card-for-adoption
+			//- include ../pages/community
+			//- include ../pages/quote
+			//- include ../pages/card-featured-breed
+		//- include ../modules/footer/footer
 		script(src="static/js/jquery.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")
 		block script
